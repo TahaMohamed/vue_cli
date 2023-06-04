@@ -1,11 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <app-nav />
   <router-view />
 </template>
-
+<script>
+import AppNav from "@/components/AppNav.vue";
+export default {
+  components: {
+    AppNav,
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -16,7 +20,7 @@
 }
 
 nav {
-  padding: 30px;
+  //padding: 10px;
 
   a {
     font-weight: bold;
