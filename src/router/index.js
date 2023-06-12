@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import DataTypeView from "@/views/DataTypeView.vue";
 import EmitView from "@/views/EmitView.vue";
 import SlotView from "@/views/SlotView.vue";
+import VModel from "@/views/VModel.vue";
 const routes = [
   {
     path: "/",
@@ -23,6 +24,11 @@ const routes = [
     path: "/slot",
     name: "slot",
     component: SlotView,
+  },
+  {
+    path: "/v-model",
+    name: "v-model",
+    component: VModel,
   },
 ];
 
