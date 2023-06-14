@@ -4,6 +4,7 @@ import DataTypeView from "@/views/DataTypeView.vue";
 import EmitView from "@/views/EmitView.vue";
 import SlotView from "@/views/SlotView.vue";
 import VModel from "@/views/VModel.vue";
+import MyStore from "@/views/MyStore.vue";
 const routes = [
   {
     path: "/",
@@ -29,6 +30,11 @@ const routes = [
     path: "/v-model",
     name: "v-model",
     component: VModel,
+  },
+  {
+    path: "/products",
+    name: "products",
+    component: MyStore,
   },
 ];
 
