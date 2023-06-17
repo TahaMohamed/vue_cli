@@ -17,27 +17,13 @@
 
 <script>
 import SingleProduct from "@/components/SingleProduct.vue";
+import productMixin from "@/mixins/productMixin";
 export default {
   name: "MyStore",
   components: {
     SingleProduct,
   },
-  data() {
-    return {
-      name: "Orange",
-      products: [],
-    };
-  },
-  methods: {
-    async getProducts() {
-      await fetch("https://dummyjson.com/products")
-        .then((response) => response.json())
-        .then((data) => (this.products = data.products));
-    },
-  },
-  async mounted() {
-    await this.getProducts();
-  },
+  mixins: [productMixin],
 };
 </script>
 
